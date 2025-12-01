@@ -1,6 +1,4 @@
-import { prisma } from './lib/prisma'
-
-async function main() {
+async function create() {
 
     // Create a new user with a post
 
@@ -32,26 +30,22 @@ async function main() {
     //         }
     //     }
     // )
-    const createPost = await prisma.post.create({
-        data: {
-            title: "this is title",
-            content: "this is the post of the contenets",
-            authorId: 1,
-            postCategory: {
-                create: {
-                    category: {
-                        connect: { id: 1 }
-                    }
-                }
-            }
-        },
-        include: {
-            postCategory: true
-        }
-    })
-    console.log(createPost)
+    // const createPost = await prisma.post.create({
+    //     data: {
+    //         title: "this is title",
+    //         content: "this is the post of the contenets",
+    //         authorId: 1,
+    //         postCategory: {
+    //             create: [{ categoryId: 3 }, { categoryId: 5 }, { categoryId: 4 }]
+    //         }
+    //     },
+    //     include: {
+    //         postCategory: true
+    //     }
+    // })
+    // console.log(createPost)
 
 
 }
-main()
+create()
 
