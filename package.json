@@ -5,7 +5,7 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "dev": "npx tsx watch  src/relational-query.ts",
+    "dev": "npx tsx watch  src/filtering.ts",
     "studio": "prisma studio",
     "build": "tsc",
     "start": "node dist/script.js",
