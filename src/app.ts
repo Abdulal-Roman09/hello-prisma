@@ -14,7 +14,8 @@ app.get('/', async (req: Request, res: Response) => {
             posts: true,
         },
     });
-    console.log("All users:", JSON.stringify(allUsers, null, 2));
+
+    console.log(allUsers);
     res.json(allUsers);
 });
 

@@ -5,7 +5,7 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "dev": "npx tsx watch src/script.ts",
+    "dev": "npx tsx watch src/create.ts",
     "build": "tsc",
     "start": "node dist/script.js",
     "migrate": "npx prisma migrate dev"
